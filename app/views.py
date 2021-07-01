@@ -9,7 +9,7 @@ import random
 
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, "bingo.html", 'index.html')
 
 def bingo(request):
     bingo = {
