@@ -9,7 +9,7 @@ import random
 
 
 def index(request):
-    return render(request, "bingo.html", 'index.html')
+    return render(request, 'index.html')
 
 def bingo(request):
     bingo = {
@@ -19,7 +19,7 @@ def bingo(request):
         "g_list" : ['G1','G2','G3','G4','G5','G6','G7','G8','G9','G10','G11','G12','G13','G14','G15','G16','G17','G18','G19','G20'],
         "o_list" : ['O1','O2','O3','O4','O5','O6','O7','O8','O9','O10','O11','O12','O13','O14','O15','O16','O17','O18','O19','O20'],
     }
-    return render(request, bingo)
+    return render(request, "bingo.html", bingo)
 
 gridSize = 5
 minNum = 1  # Minimum number for each column
